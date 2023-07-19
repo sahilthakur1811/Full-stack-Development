@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to Code help!!</h1>
+    <h1> A Simple form</h1>
+    <form>
+        Enter your first name:
+        <input type="text" name="fname" size="24" maxlength="20" required> 
+        <br>
+        Enter your last name:
+        <input type="text" name="fname" size="24" maxlength="20" placeholder="Enter your last name">  
+        <br/>
+        Enter your password:
+        <input type="password" name="fname" size="16" maxlength="20"> <br/>
+        <textarea name="txtarea" rows="10" cols="30" maxlength="200" placeholder="comment text."> </textarea> 
+        <br/>
+        <select name="language" size="1"> 
+            <optgroup label="backend">
+            <option value="vall" >Javascript</option>
+            <option value="vall">Java</option>
+            <option value="vall">C</option>
+            <option value="vall">C++</option>
+            </optgroup>
+            <optgroup label="front end">
+            <option value="vall" selected>Html</option>
+            </optgroup>
+        </select>
+        <p>Select an option</p>
+        <input id="opt1" type="radio" name="freemium" value="free">
+        <label for="opt1">Free</label>
+        <input id="opt2" type="radio" name="freemium" value="paid">
+        <label for="opt2">Paid</label>
 
-    <!-- <tabel>
-        <tr>
-            <td> 
-    <lable for="sahil">Username:</lable>
-    </td>
-    <td>
-    <input type="text" name="sahil">
-    </td>
-    </tr>
+        <p>Checkbox</p>
+        <input id="ch1" type="checkbox" name="check" value="free">
+        <label for="ch1">Free</label>
+        <input id="ch2" type="checkbox" name="check" value="paid">
+        <label for="ch2">Paid</label>
 
-    </tabel>
-    <br>
+        <p>Select a file</p>
+        <input type="file" name="image" accept="image/*">
+        <input type="hidden" name="sum" value="1012">
+        <br>
+        <br>
+        <input type="color" value="#AEAEAE">
+        <br>
+        <br>
+        <input type="date" value="2023-12-11" min="2022-01-01" max="2023-12-31">
+        <br>
+        <br>
+        <input type="time" value="10:10">
+        <br>
+        <br>
+        <input type="month" value="2023-12">
+        <br>
+        <br>
+        <input type="datetime-local" value="2023-12-11 10:10">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
 
-    <table>
-        <tr>
-            <td><lable for="sahil">Password:</lable></td>
-            <td> <input type="text" name="sahil"></td>
-        </tr>
-
-
-
-
-    </table>
+        
+    </form>
     
-   <button>Submit</button> -->
-   <form action="https://www.thecodehelp.in">
-    <label for="Username">Username</label>
-    <input type="text" id="Username">
-    <br>
-    <br>
-    <label for="Password">Password</label>
-    <input type="password" id="Password">
-    <br>
-    <br>
-    <input type="submit" value="Submit">
-   </form>
-
 </body>
 </html>
