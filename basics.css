@@ -1,0 +1,23 @@
+
+/*Selectoe{feature:value}*/
+h1{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: black;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.note{
+    border: 8px solid lightgoldenrodyellow;
+}
+
+.warning{
+    border: 7px dashed red;
+}
+
+.bigfont{
+    font-size: 150%;
+}
